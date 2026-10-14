@@ -1,0 +1,32 @@
+### Criar uma nova tarefa
+POST http://localhost:3333/tasks
+Content-Type: application/json
+
+{
+  "title": "Estudar Node.js",
+  "description": "Fazer o desafio prático de CRUD de tarefas"
+}
+
+### 1. Listar todas as tarefas (GET)
+GET http://localhost:3333/tasks
+
+### 2. Buscar tarefas com Filtro (GET com Query Params)
+GET http://localhost:3333/tasks?search=Estudar
+
+### 3. Atualizar uma tarefa existente (PUT)
+# ATENÇÃO: Substitua o ID abaixo pelo ID real retornado na listagem acima
+PUT http://localhost:3333/tasks/6d95a919-0615-45e6-8252-c221e3e9bc31
+Content-Type: application/json
+
+{
+  "title": "Estudar Node.js Avançado",
+  "description": "Atualizando a descrição"
+}
+
+### 4. Marcar/Desmarcar tarefa como concluída (PATCH)
+# Lembre-se de substituir o ID pelo ID real de uma tarefa
+PATCH http://localhost:3333/tasks/6d95a919-0615-45e6-8252-c221e3e9bc31/complete
+
+### 5. Deletar uma tarefa (DELETE)
+# Lembre-se de substituir o ID pelo ID real de uma tarefa
+DELETE http://localhost:3333/tasks/6d95a919-0615-45e6-8252-c221e3e9bc31

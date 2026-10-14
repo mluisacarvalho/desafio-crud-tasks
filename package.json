@@ -1,0 +1,24 @@
+{
+  "name": "desafio-crud-tasks",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mluisacarvalho/desafio-crud-tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mluisacarvalho/desafio-crud-tasks/issues"
+  },
+  "homepage": "https://github.com/mluisacarvalho/desafio-crud-tasks#readme",
+  "dependencies": {
+    "csv-parse": "^7.0.3"
+  }
+}
